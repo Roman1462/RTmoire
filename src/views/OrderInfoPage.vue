@@ -84,6 +84,7 @@
               <h3>{{ item.product.title }}</h3>
               <b>{{ (item.price * item.quantity) | numberFormat }} ₽</b>
               <span>Артикул: {{ item.product.id }}</span>
+              <span class="size__code">Размер: {{ item.size.title }}</span>
             </li>
           </ul>
 

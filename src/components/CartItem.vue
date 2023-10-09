@@ -6,7 +6,9 @@
       <img :src="item.image" width="120" height="120" :alt="item.product.title">
     </div>
     <h3 class="product__title">
-      {{ item.product.title + ' (' + item.price + ' ₽)' }}
+      {{ item.product.title + ' (' + item.price + ' ₽).' }} <span class="size__code">
+      Размер: {{ item.size.title }}
+    </span>
     </h3>
     <p class="product__info product__info--color">
       Цвет:

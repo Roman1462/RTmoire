@@ -86,7 +86,7 @@ body {
   color: #222;
   -webkit-tap-highlight-color: transparent;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale
+  -moz-osx-font-smoothing: grayscale;
 }
 
 img {
@@ -125,7 +125,7 @@ a {
   background-color: transparent;
   -webkit-tap-highlight-color: transparent;
   display: inline-block;
-  padding: 25px 15px;
+  padding: 21px 9px 17px;
   -webkit-transition: all .2s ease;
   transition: all .2s ease;
   font-family: "Circe", "Arial", sans-serif;
@@ -970,6 +970,10 @@ a {
   grid-row: 3/4;
   font-size: 12px;
   color: #b9b9b9
+}
+
+.size__code {
+  padding-left: 2%;
 }
 
 .product__del {

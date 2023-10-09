@@ -9,7 +9,7 @@
           Каталог
         </h1>
         <span class="content__info">
-          {{ countProducts }} товара
+          {{ countProducts }} элементов
         </span>
       </div>
       <!-- <fieldset class="form__block">

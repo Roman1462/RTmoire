@@ -9,7 +9,7 @@
         <!-- <h3 class="title">Lorem ipsum</h3> -->
         <div class="overlay"></div>
         <div class="item_button">
-          <button class="button button--primery" @click.prevent="loadProduct">
+          <button class="button button--primery btn_sm" @click.prevent="loadProduct">
             <div v-if="productAddSending">Отправляем ...</div>
             <div v-else>В КОРЗИНУ</div>
           </button>
@@ -18,9 +18,9 @@
     </router-link>
 
     <h3 class="catalog__title">
-      <a href="#">
+      <router-link :to="{ name: 'product', params: { id: product.id } }">
         {{ product.title }}
-      </a>
+      </router-link>
     </h3>
 
     <span class="catalog__price">
@@ -128,10 +128,10 @@ export default {
 
 .overlay {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  bottom: 2%;
+  right: 0%;
+  width: 53%;
+  height: 19%;
   background: rgba(0, 0, 0, 0);
   /* background: rgba(0, 0, 0, 0.5); */
   /* Настройка цвета и прозрачности для блока с заголовком */
@@ -169,13 +169,13 @@ export default {
 
 .item_button {
   position: absolute;
-  width: 100%;
-  left: 0;
+  width: 52%;
+  right: 0%;
   /* top: 65%; */
-  top: 25%;
+  bottom: 4.5%;
   /* Отступ сверху */
   text-align: center;
-  opacity: 0;
+  opacity: 55%;
   transition: opacity .35s ease;
 }
 
@@ -195,5 +195,14 @@ export default {
 
 .hover-effect-btn:hover .item_button {
   opacity: 1;
+}
+
+.catalog__item {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.btn_sm{
+  padding: 7px 9px 2px;
 }
 </style>

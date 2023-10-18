@@ -154,11 +154,11 @@ export default {
     currentDeliveryPrice() {
       const { price } = this.deliveries.find(
         (item) => item.id === this.formData.deliveryTypeId,
-      );
+      ) || {};
       return price;
     },
     getDeliveryPrice() {
-      return (price) => ((price === '0') ? 'бесплатно' : (price.concat(' ₽')));
+      return (price) => ((price === '0') ? 'бесплатно' : (price.concat(' ₽'))) || {};
     },
   },
   methods: {
